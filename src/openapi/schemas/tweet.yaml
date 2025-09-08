@@ -452,7 +452,7 @@ components:
     CommunityData:
       required:
         - "__typename"
-        - "id_str"
+        # - "id_str"
         # - "name"
         # - "description"
         # - "search_tags"
@@ -1432,7 +1432,6 @@ components:
         - "id"
         - "title"
         - "preview_text"
-        - "cover_media"
         - "metadata"
       properties:
         rest_id:
@@ -1450,6 +1449,8 @@ components:
           $ref: "#/components/schemas/ArticleMetadata"
         lifecycle_state:
           $ref: "#/components/schemas/ArticleLifecycleState"
+        # todo: content_state (#101)
+        # todo: media_entities (#101)
 
     ArticleCoverMedia:
       required:
