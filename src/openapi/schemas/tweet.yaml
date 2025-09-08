@@ -51,7 +51,7 @@ components:
           $ref: "./typename.yaml#/components/schemas/TypeName" # ContextualTweetInterstitial
         displayType:
           type: string
-          enum: [NonCompliant]
+          enum: [NonCompliant, EntireTweet]
         text:
           $ref: "#/components/schemas/TweetInterstitialText"
         revealText:
@@ -277,7 +277,6 @@ components:
 
     NoteTweet:
       required:
-        - "is_expandable"
         - "note_tweet_results"
       properties:
         is_expandable:
