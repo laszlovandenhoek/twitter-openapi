@@ -29,9 +29,7 @@ Note that the license also inherits to the output.
 ### build
 
 ```shell
-python -V # Python 3.10.8
-pip install -r requirements.txt
-python tools/build.py
+uv run tools/build.py
 ```
 
 ## License
